@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}
+<title>About | Daisy Butler</title>
+{% endblock %}
+{% block content %}
+        <div id="about-section-1" class="section content-section container-fluid">
+            <div class="row content-wrapper">
+                <div class="col-12 col-md-6">
+                    <h2>About.</h2>
+                    <p>
+                        As a website enthusiastic with a flare for beautiful design and well-structured code, I have gained strong experience in
+                        designing, developing and managing WordPress websites single-handedly. I have a good understanding of the best practises
+                        for SEO and UX and a patience and a methodical mind for problem-solving.<br><br>
+
+                        I have frontend experience with HTML, CSS, JavaScript and JQuery and backend experience with PHP, Python, Flask and
+                        Django. I have an in-depth knowledge of hosting and domain management as well as accessing and editing applications via
+                        FTP.
+
+                    </p><br>
+                    <div id="about-cta" class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="{{ url_for('portfolio') }}" class="button-dark btn">Example Work</a>
+                        </div>
+                        <div id="cv-download" class="col-12 col-md-6 col-lg-8">
+                            <a href="{{ url_for('static', filename='') }}"><i class="bi bi-download"></i>Download My CV</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 image-holder">
+                   
+                </div>
+            </div>
+        </div>
+{% endblock %}

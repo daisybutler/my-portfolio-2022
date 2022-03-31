@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+{% block title %}
+<title>Portfolio | Daisy Butler</title>
+{% endblock %}
+{% block content %}
+<div id="portfolio-section-1" class="section content-section container-fluid">
+    <div class="row content-wrapper">
+        <div class="col-12">
+            <h1>Portfolio.</h1>
+        </div>
+    </div>
+</div>
+<div id="portfolio-frontend" class="section content-section container-fluid project-section">
+    <div class="row content-wrapper">
+        <div class="col-12 col-lg-4 portfolio-text">
+            <h2>Frontend</h2>
+            <p>Handwritten HTML, CSS and JavaScript projects using Bootstrap as a framework.</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" onmouseenter="viewProject('frontend-card-overlay', 'frontend-image')"
+                onmouseleave="exitProject('frontend-card-overlay', 'frontend-image')">
+                <img id="frontend-image" src="{{ url_for('static', filename='images/shoe-website-mockup.png') }}"
+                    class="card-img" alt="shoe-website-mockup">
+                <div id="frontend-card-overlay" class="card-img-overlay row">
+                    <div class="project-controls-section col-12">
+                        <a href="https://daisybutler.github.io/example-work-1/" target="_blank"
+                            class="btn project-controls live">Live Project</a>
+                        <a href="https://github.com/daisybutler/example-work-1" target="_blank"
+                        class="btn project-controls repository">Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card"
+                onmouseenter="viewProject('frontend-card-overlay-2', 'frontend-image-2')"
+                onmouseleave="exitProject('frontend-card-overlay-2', 'frontend-image-2')">
+                <img id="frontend-image-2" src="{{ url_for('static', filename='images/shoe-website-mockup.png') }}"
+                    class="card-img" alt="shoe-website-mockup">
+                <div id="frontend-card-overlay-2" class="card-img-overlay row">
+                    <div class="project-controls-section col-12">
+                        <a href="#" target="_blank"
+                            class="btn project-controls live">Live Project</a>
+                        <a href="#" target="_blank"
+                        class="btn project-controls repository">Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio-frontend" class="section content-section container-fluid project-section">
+    <div class="row content-wrapper">
+        <div class="col-12 col-lg-4 portfolio-text">
+            <h2>Fullstack</h2>
+            <p>A Python project using Django as a framework. The website has the ability to accpet payemnts using Stripe
+                and create users and associate order information with them.</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card"
+                onmouseenter="viewProject('fullstack-card-overlay', 'fullstack-image')"
+                onmouseleave="exitProject('fullstack-card-overlay', 'fullstack-image')">
+                <img id="fullstack-image" src="{{ url_for('static', filename='images/fullstack-mockup-min.png') }}"
+                    class="card-img" alt="shoe-website-mockup">
+                <div id="fullstack-card-overlay" class="card-img-overlay row">
+                    <div class="project-controls-section col-12">
+                        <a href="https://www.figma.com/file/LiH3RoaQylAGs7fQ1vsOiv/Workbench-Fullstack-Project?node-id=0%3A1" target="_blank"
+                        class="btn project-controls designs">Figma Designs</a>
+                        <a href="https://daisybutler-workbench.herokuapp.com/" target="_blank"
+                            class="btn project-controls live">Live Project</a>
+                        <a href="https://github.com/daisybutler/Workbench-project04" target="_blank"
+                        class="btn project-controls repository">Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card"
+                onmouseenter="viewProject('fullstack-card-overlay-2', 'fullstack-image-2')"
+                onmouseleave="exitProject('fullstack-card-overlay-2', 'fullstack-image-2')">
+                <img id="fullstack-image-2" src="{{ url_for('static', filename='images/portfolio-mockup.png') }}"
+                    class="card-img" alt="shoe-website-mockup">
+                <div id="fullstack-card-overlay-2" class="card-img-overlay row">
+                    <div class="project-controls-section col-12">
+                        <a href="#" target="_blank"
+                        class="btn project-controls designs">Figma Designs</a>
+                        <a href="" class="btn project-controls live">You're On The Live Project!</a>
+                        <a href="https://github.com/daisybutler/portfolio" target="_blank"
+                        class="btn project-controls repository">Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio-frontend" class="section content-section container-fluid project-section">
+    <div class="row content-wrapper">
+        <div class="col-12 col-lg-4 portfolio-text">
+            <h2>WordPress</h2>
+            <p>WordPress websites I have built using Elementor Pro, making full use of templates, loops and custom
+                fields for efficiency in creation. Managing the entire process - from designing in XD to deplying the
+                live site - was an exciting process.</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card"
+                onmouseenter="viewProject('wp-card-overlay', 'wp-image')"
+                onmouseleave="exitProject('wp-card-overlay', 'wp-image')">
+                <img id="wp-image" src="{{ url_for('static', filename='images/isbc-mockup.png') }}"
+                    class="card-img" alt="shoe-website-mockup">
+                <div id="wp-card-overlay" class="card-img-overlay row">
+                    <div class="project-controls-section col-12">
+                        <a href="#" target="_blank"
+                        class="btn project-controls designs">XD Designs</a>
+                        <a href="https://www.isbclub.org.uk/" target="_blank"
+                            class="btn project-controls live">Live Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card"
+                onmouseenter="viewProject('wp-card-overlay-2', 'wp-image-2')"
+                onmouseleave="exitProject('wp-card-overlay-2', 'wp-image-2')">
+                <img id="wp-image-2" src="{{ url_for('static', filename='images/ead-mockup.png') }}"
+                    class="card-img" alt="shoe-website-mockup" width="110%" height="auto">
+                <div id="wp-card-overlay-2" class="card-img-overlay row">
+                    <div class="project-controls-section col-12">
+                        <a href="#" target="_blank"
+                        class="btn project-controls designs">XD Designs</a>
+                        <a href="https://euroautomaticdoors.co.uk" target="_blank"
+                            class="btn project-controls live">Live Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio-frontend" class="section content-section container-fluid project-section">
+    <div class="row content-wrapper">
+        <div class="col-12 col-lg-4 portfolio-text">
+            <h2>SquareSpace</h2>
+            <p>SquareSpace was the first CMS I ever used to build a website. I had great fun and it was what inspired me
+                to learn more about web development and learn to write my own code.</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card"
+                onmouseenter="viewProject('ss-card-overlay', 'ss-image')"
+                onmouseleave="exitProject('ss-card-overlay', 'ss-image')">
+                <img id="ss-image" src="{{ url_for('static', filename='images/ss-mockup-2-min.png') }}"
+                    class="card-img" alt="shoe-website-mockup">
+                <div id="ss-card-overlay" class="card-img-overlay row">
+                    <div class="project-controls-section col-12">
+                        <a href="https://www.woodcutterslodgesuffolk.co.uk/" target="_blank"
+                            class="btn project-controls live">Live Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card"
+                onmouseenter="viewProject('ss-card-overlay-2', 'ss-image-2')"
+                onmouseleave="exitProject('ss-card-overlay-2', 'ss-image-2')">
+                <img id="ss-image-2" src="{{ url_for('static', filename='images/ss-mockup-min.png') }}"
+                    class="card-img" alt="shoe-website-mockup">
+                <div id="ss-card-overlay-2" class="card-img-overlay row">
+                    <div class="project-controls-section col-12">
+                        <a href="https://www.generationnext.uk/" target="_blank"
+                            class="btn project-controls live">Live Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio-cta" class="section endpage-cta">
+    <div class="row">
+        <div class="col-12">
+            <h2>Let's Connect</h2>
+            <p>I'm always keen to connect with others in the digital industry.</p>
+            <div>
+            <a href="https://www.linkedin.com/in/daisymbutler/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:daisybutler16@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

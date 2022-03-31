@@ -1,1 +1,2 @@
-# my-portfolio-2022
+# portfolio
+A quick summary into who I am and what I do
