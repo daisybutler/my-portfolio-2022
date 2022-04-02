@@ -324,6 +324,7 @@ background-color: #EEE6DD;
 #section-4 {
     background-color: #3F484C;
     border-radius: 40px;
+    text-align: center;
 }
 
 #section-4 h2 {
@@ -408,6 +409,10 @@ background-color: #EEE6DD;
 #cv-download a {
     font-size: inherit;
     font-family: 'Roboto', sans-serif;
+}
+
+#cv-download a:hover {
+    color: #2e3436;
 }
 
 /* ------------------------ PORTFOLIO */
