@@ -1,34 +1,93 @@
-{% extends "base.html" %}
-{% block title %}
-<title>About | Daisy Butler</title>
-{% endblock %}
-{% block content %}
-        <div id="about-section-1" class="section content-section container-fluid">
-            <div class="row content-wrapper">
-                <div class="col-12 col-md-6">
-                    <h2>About.</h2>
-                    <p>
-                        As a website enthusiastic with a flare for beautiful design and well-structured code, I have gained strong experience in
-                        designing, developing and managing WordPress websites single-handedly. I have a good understanding of the best practises
-                        for SEO and UX and a patience and a methodical mind for problem-solving.<br><br>
+<!DOCTYPE html>
+<html lang="en-UK">
 
-                        I have frontend experience with HTML, CSS, JavaScript and JQuery and backend experience with PHP, Python, Flask and
-                        Django. I have an in-depth knowledge of hosting and domain management as well as accessing and editing applications via
-                        FTP.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Frontend Web Developer | Daisy Butler">
+    <meta name="description"
+        content="Hi I'm Daisy, A Suffolk-Based Web Designer & Developer, Obsessed With Creating Outstanding Websites.">
+    <meta name="keywords"
+        content="web developer Suffolk, web designer Suffolk, HTML, CSS, JavaScript, WP developer, junior developer, frontend developer, SEO, female developer">
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style/style.css" type="text/css">
+    <title>Daisy Butler</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
+</head>
 
-                    </p><br>
-                    <div id="about-cta" class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <a href="{{ url_for('portfolio') }}" class="button-dark btn">Example Work</a>
+<body>
+    <!--HEADER-->
+    <header class="section">
+        <!--NAVIGATION-->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="static/images/logo-dark.png" alt="Daisy Butler" width="100px"
+                        height="auto"></a>
+
+                <div id="nav-links" class="d-none d-md-flex ">
+                    <ul class="navbar-nav">
+                        <div class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
                         </div>
-                        <div id="cv-download" class="col-12 col-md-6 col-lg-8">
-                            <a href="{{ url_for('static', filename='') }}"><i class="bi bi-download"></i>Download My CV</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 image-holder">
-                   
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="button-dark" href="#">Contact</button>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+    </header>
+    <div id="about-section-1" class="section content-section container-fluid">
+        <div class="row content-wrapper">
+            <div class="col-12 col-md-6">
+                <h2>About.</h2>
+                <p>
+                    As a website enthusiastic with a flare for beautiful design and well-structured code, I have gained
+                    strong experience in
+                    designing, developing and managing WordPress websites single-handedly. I have a good understanding
+                    of the best practises
+                    for SEO and UX and a patience and a methodical mind for problem-solving.<br><br>
+
+                    I have frontend experience with HTML, CSS, JavaScript and JQuery and backend experience with PHP,
+                    Python, Flask and
+                    Django. I have an in-depth knowledge of hosting and domain management as well as accessing and
+                    editing applications via
+                    FTP.
+
+                </p><br>
+                <div id="about-cta" class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="portfolio.html" class="button-dark btn">Example Work</a>
+                    </div>
+                    <div id="cv-download" class="col-12 col-md-6 col-lg-8">
+                        <a href="static/documents/Daisy Butler Web Developer.pdf" target="_blank"><i class="bi bi-download"></i>Download My CV</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 image-holder">
+
+            </div>
         </div>
-{% endblock %}
+    </div>
+    <footer class="section container">
+        <div class="row">
+            <div id="footer-logo" class="col-6">
+                <img src="static/images/logo-light.png" alt="Daisy Butler" width="50px" height="auto">
+            </div>
+            <div id="copyright" class="col-6">
+                <p>Copyright 2022</p>
+            </div>
+        </div>
+    </footer>
+    <!--JAVASCRIPT-->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="static/js/script.js" type="text/javascript"></script>
+
+</body>
+
+</html>
