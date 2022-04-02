@@ -10,6 +10,7 @@ function dim(light) {
 }
 
 // When user mouse enters section, begin revolving styles text.
+/*
 function revolveStyle() {
     setTimeout(function() {
         let counter = 0;
@@ -25,6 +26,7 @@ function revolveStyle() {
     }, 2000)
     
 }
+*/
 
 // Create new typewriter
 const typewriter = new Typewriter('#typewriter', {
