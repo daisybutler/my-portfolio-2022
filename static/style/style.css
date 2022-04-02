@@ -15,8 +15,7 @@ body {
 
 .content-wrapper {
     margin-left: 10%;
-    margin-right: 10%;
-    
+    margin-right: 10%;  
 }
 
 .content-section {
@@ -417,6 +416,10 @@ background-color: #EEE6DD;
 
 #cv-download a:hover {
     color: #2e3436;
+}
+
+#cv-image {
+    box-shadow: 1px 1px 10px #3f484c95;
 }
 
 /* ------------------------ PORTFOLIO */
