@@ -434,6 +434,11 @@ background-color: #EEE6DD;
     border-bottom: 1px solid #EEE6DD;
 }
 
+.project-section .content-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .project-section .card {
     border: none;
 }
@@ -444,6 +449,7 @@ background-color: #EEE6DD;
 
 .card-img {
     border: none;
+    aspect-ratio: 3.1/2;
 }
 
 .card-img-overlay {
